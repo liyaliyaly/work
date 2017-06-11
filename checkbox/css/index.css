@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-size: 62.5%; }
+
+.list {
+  width: 100%;
+  font-size: 1.6rem; }
+  .list li {
+    line-height: 40px;
+    position: relative; }
+    .list li input {
+      display: none; }
+    .list li .checkbox {
+      display: block;
+      border: 1px solid #eee;
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      right: 10px;
+      top: 8px; }
+    .list li .checkbox:after {
+      display: block;
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transform: rotate(-45deg); }
+    .list li input[type=checkbox]:checked + label {
+      background: lightseagreen; }
+    .list li .box {
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      justify-content: space-around; }
+      .list li .box p {
+        width: 22%; }
+        .list li .box p input {
+          display: none; }
+        .list li .box p label {
+          display: inline-block;
+          width: 100%;
+          height: 40px;
+          border: 1px solid lightseagreen;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-radius: 8px; }
+      .list li .box input[type=radio]:checked + label {
+        background: lightseagreen;
+        color: #fff; }
+  .list .last {
+    height: 40px;
+    line-height: 40px;
+    background: #eee;
+    position: relative; }
+    .list .last a {
+      color: lightseagreen;
+      position: absolute; }
+    .list .last .reset {
+      left: 15px; }
+    .list .last .star {
+      right: 15px; }
+
+/*# sourceMappingURL=index.css.map */
